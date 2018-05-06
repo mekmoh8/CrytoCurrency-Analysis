@@ -4,16 +4,16 @@ Blockchain technology is a decentralized database system that was first implemen
 
 The goal is to find a model where we can predit the value of Cryptocoin considering all the factors which influences the price.
 
-## Getting Started
+## The best way to understand this project is to read the files in the following order:
 
-The best way to understand this project is to read the files in the following order:
-    a.  Analyze other cryptocurrencies to see if there's a correlation (CompareCoins.ipynb)
-    b.  Analyze Reddit Metrics(Reddit Metrics.ipynb)
-    c.  Analyze Google trends(Google trends.ipynb)
-    d.  Analyze Stock Market Prices(Stock Market.ipynb)
-    e.  Analyze Commodity Prices(Commodity.ipynb)
-    f.  Analyze Oil Prices(Oil Prices.ipynb)
-    g.  Analyze BTC-ETH EDA (Bitcoin_EDA)
+1.  Analyze other cryptocurrencies to see if there's a correlation (CompareCoins.ipynb)
+2.  Analyze Reddit Metrics(Reddit Metrics.ipynb)
+3.  Analyze Google trends(Google trends.ipynb)
+4.  Analyze Stock Market Prices(Stock Market.ipynb)
+5.  Analyze Commodity Prices(Commodity.ipynb)
+6.  Analyze Oil Prices(Oil Prices.ipynb)
+7.  Analyze BTC-ETH EDA (Bitcoin_EDA)
+8.  Milestone Report
 
 ### Technologies:
 Programming Languages: Python
