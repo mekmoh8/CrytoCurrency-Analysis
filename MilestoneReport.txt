@@ -1,0 +1,68 @@
+CryptoCurrency Price Prediction - Project Milestone Report
+
+The goal of this project is to find a model where we can predit the value of Cryptocoin considering all the factors which influences the price. Due to volatility nature of the cryptocurrency market, classical time series analysis (using historical prices alone) doesnÕt perform very well when it comes to predicting cryptocurrency future price.
+Th eproject looks at other factors that can influence the price.
+
+
+Data set:
+
+1. CryptoCompare (cryptocompare.com)
+2. Quandl (Quand.com)
+3. Google Trends using Pytrends - GoogleNews search frequency for the phrase "cryptocurrency" and how it influences price
+4. Twitter data using API  -- Tweets on Bitcoin and how it influences price
+5. Stock Market Prices (finance.yahoo.com)                             
+6. Commodity Prices (kitco.com)
+7. Oil Prices (eia.gov)
+8. Reddit Metrics (redditmetrics.com)
+
+SUMMARY
+Blockchain technology is a decentralized database system that was first implemented by Bitcoin. Created by a mysterious person (or group), Blockchain has a very high tendency to transform modern day business operation models. As Bitcoin gains more traction, people keep coming up with alternate coins that are also based on Blockchain technology.
+
+Initial Questions:-
+  1. What affects the crypto price?
+  2. When Bitcoin spikes, does every other coin spike? 
+  3. Does social media affect crypto prices?
+  
+
+APPROACH:
+Initial Data Exploration (Data Wrangling): 
+a. Compare multiple coins to see if there's a corelation in the price. Used CryptoCompare.com to get daily (hourly) price data for different coins.For now, only 'BTC', 'ETH' is considered. 
+b. Get google trends using Pytrends API, search = 'CryptoCurrency' to see how it affects price. 
+c. Twitter sentiment analysis to see how it affects price
+d. Explore any other factors which influences the price
+
+Employed Python technologies to import and inspect the raw data, isolate relevant variables, calculate new variables, organize the dataframe, and resolve missing, invalid, corrupted or duplicate values. 
+
+
+Statistical Inference and EDA of BTC/ETH prices
+  Due to volatility of crytocurrency market, it becomes difficult to predict the currencies prices. 
+  Initial questions come to mind are: 
+  1. Is there any obvious correlation/lead-lag relationship between different crytocurrency market prices?
+  2. If the correlation between a pair of currencies A and B existed, can we use currency A price history to predict future price of currency B? Will it be more useful than using just historical prices of currency B alone?
+  3. What does the rise/fall in search frequency of the word "crytocurrency" on GoogleNews imply?
+ 
+
+When talking about time series analysis, we believe that an observed time series is a combination of a pattern and some random variations. Using this approach, future values are predicted based on its historical data. To find out if this method work with a volatile market such as crypto's.
+Dickey-Fuller test and Granger Causality Test are used to complete the analysis.
+
+Dickey-Fuller test - is a statistical test that allows you to check if the expectations of stationarity are met. It’s a unit root test that determines how strongly a time series is defined by a trend. The test uses an autoregressive model and optimizes an information criterion across different lag values. The null hypothesis is that the time series can be represented by a unit root (means it’s not stationary). 
+
+Granger Causality Test - is a statistical hypothesis test for determining whether one time series is useful in forecasting another. A time series A “Granger-cause” time series B if lag values of A provided statistically significant information about future values of B. In this project, we’re using this test to identify a cointegrated pair- a pair of cryptocurrencies in which one coin’s lag values can be used to predict the other coin’s future values.
+
+
+
+Initial findings from EDA: 
+
+1) Based on statistical inference and EDA of BTC/ETH prices and GoogleNews search frequency of the word "cryptocurrency" we found that:
+- There is a high correlation between the rise in Google search frequency and the drop in currencies prices
+- There is a low correlation between an observation and it's lag 1 (historical price)
+- No obvious trend and seasonality observed in the price data
+- BTC and ETH price spike is more "rapid" than fall. The prices (scaled) converged during fall, but not spike
+
+CONCLUSION:
+From the above analysis, I come to the conclusion that cyrpto time series analysis ( historical prices alone) might be insufficent when predicting such volatile markets. 
+Using Machine Learning with variety of predictors will improve prediction model significantly.
+
+
+
+
