@@ -1,3 +1,4 @@
+
 # CryptoCurrency Price Prediction
 
 Blockchain technology is a decentralized database system that was first implemented by Bitcoin. Created by a mysterious person (or group), Blockchain has a very high tendency to transform modern day business operation models. As Bitcoin gains more traction, people keep coming up with alternate coins that are also based on Blockchain technology.
@@ -13,7 +14,8 @@ The goal is to find a model where we can predit the value of Cryptocoin consider
 5.  Analyze Commodity Prices(Commodity.ipynb)
 6.  Analyze Oil Prices(Oil Prices.ipynb)
 7.  Analyze BTC-ETH EDA (Bitcoin_EDA)
-8.  Milestone Report
+8.  Feature Selection - Random Forest
+9.  Milestone Report
 
 ### Technologies:
 Programming Languages: Python
