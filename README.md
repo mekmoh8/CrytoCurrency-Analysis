@@ -16,6 +16,8 @@ The goal is to find a model where we can predit the value of Cryptocoin consider
 7.  Analyze BTC-ETH EDA (Bitcoin_EDA)
 8.  Feature Selection - Random Forest
 9.  Milestone Report
+10. ARIMA Model
+11. LSTM Model
 
 ### Technologies:
 Programming Languages: Python
