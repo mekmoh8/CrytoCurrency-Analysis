@@ -1,0 +1,8 @@
+Data Wrangling
+
+Time series analysis --- Resampling the data
+Filter unwanted observations
+Dropped columns with NULLS
+Dropped outlier rows
+Calculated moving average
+Merge data from multiple sources
